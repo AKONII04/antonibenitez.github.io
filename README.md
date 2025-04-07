@@ -1,40 +1,35 @@
-🍣 Sushi Master - README
-¡Bienvenido a Sushi Master! �✨ Un sitio web sencillo y elegante para amantes del sushi.
+# 🍣 Sushi Master  
 
-📂 Estructura del Proyecto
-Copy
+¡Bienvenido a **Sushi Master** — tu experiencia definitiva de sushi! 🎌✨  
+
+## 📂 Estructura del proyecto  
 sushi-master/
 │
-├── index.html           � (Página principal)  
-├── menu.html            🍱 (Página del menú de sushi)  
-├── contacto.html        📞 (Página de contacto)  
-├── css/  
-│   └── estilos.css      🎨 (Estilos principales)  
-└── img/                 📸 (Imágenes del sitio)  
-🚀 Cómo Usar
-Clona el repositorio (o descárgalo como ZIP).
+├── index.html 🏠 (Página de inicio)
+├── menu.html 🍱 (Menú de sushi)
+├── contacto.html 📞 (Página de contacto)
+├── css/
+│ └── estilos.css 🎨 (Estilos CSS principales)
+└── img/ 📸 (Carpeta de imágenes)
 
-Abre index.html en tu navegador.
+## 🚀 Cómo empezar  
 
-Explora las páginas:
+1. **Clona el repositorio** (o descárgalo como ZIP).  
+2. Abre `index.html` en tu navegador.  
+3. Explora las páginas:  
+   - **Inicio** (`index.html`) – Bienvenida e información.  
+   - **Menú** (`menu.html`) – Descubre nuestros platos.  
+   - **Contacto** (`contacto.html`) – Reservas y ubicación.  
 
-Inicio (index.html) - Presentación del restaurante.
+## 🛠 Tecnologías usadas  
+- **HTML5**  
+- **CSS3**  
+- **Imágenes responsivas**  
 
-Menú (menu.html) - Nuestra selección de sushi.
 
-Contacto (contacto.html) - Reservas y ubicación.
+---  
+🎌 **¡Disfruta de tu experiencia de sushi virtual!** �  
 
-🛠 Tecnologías Usadas
-HTML5
+ 
 
-CSS3
-
-Imágenes optimizadas
-
-📷 Créditos
-Imágenes: Freepik / Unsplash (libres de derechos).
-
-✨ ¡Disfruta del sushi virtual! ✨
-
-🔗 ¿Problemas? Abre un issue en GitHub.
 
