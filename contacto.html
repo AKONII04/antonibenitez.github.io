@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
+       }
+
 <body>
     <header>
         <div class="logo-container">
@@ -182,5 +184,18 @@
             <p>&copy; 2025 Sushi Master. Todos los derechos reservados.</p>
         </div>
     </footer>
+    <script>
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+    let nombre = document.getElementById("nombre").value.trim();
+    let email = document.getElementById("email").value.trim();
+    let checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+    
+    if (nombre === "" || email === "" || checkboxes.length === 0) {
+        alert("Por favor completa al menos los campos Nombre y Email, y selecciona al menos una opción.");
+        event.preventDefault(); // Detiene el envío del formulario
+    }
+});
+</script>
+
 </body>
 </html>
