@@ -1,296 +1,84 @@
-/* Configuración global y reseteo */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Variables CSS */
-:root {
-    --color-primary: #e84c3d;
-    --color-secondary: #2c3e50;
-    --color-accent: #f1c40f;
-    --color-bg-light: #f9f9f9;
-    --color-bg-dark: #2c3e50;
-    --color-text: #333;
-    --color-text-light: #f9f9f9;
-    --font-main: 'Poppins', sans-serif;
-    --font-japanese: 'Noto Sans JP', sans-serif;
-}
-
-/* Tipografía y base */
-body {
-    font-family: var(--font-main);
-    color: var(--color-text);
-    line-height: 1.6;
-    background-color: white;
-}
-
-h1, h2, h3 {
-    font-family: var(--font-japanese);
-    color: var(--color-secondary);
-}
-
-h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
-
-h2 {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-    position: relative;
-}
-
-h2::after {
-    content: "";
-    display: block;
-    width: 50px;
-    height: 3px;
-    background-color: var(--color-primary);
-    margin-top: 10px;
-}
-
-h3 {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-}
-
-a {
-    color: var(--color-primary);
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-a:hover {
-    color: var(--color-secondary);
-}
-
-strong {
-    color: var(--color-primary);
-}
-
+/* Cabecera */
 header {
-    background-color: var(--color-bg-dark);
-    color: var(--color-text-light);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: var(--color-bg-dark);
+    color: var(--color-text-light);
     padding: 1rem 2rem;
-    flex-wrap: wrap;
 }
 
-.logo-container img {
-    max-height: 50px;
+header h1 {
+    font-size: 1.8rem;
 }
 
-.menu {
+nav ul {
     list-style: none;
     display: flex;
     gap: 1.5rem;
 }
 
-.menu a {
+nav ul li a {
     color: var(--color-text-light);
     font-weight: bold;
 }
 
-.menu a:hover,
-.menu .active {
+nav ul li a:hover {
     color: var(--color-accent);
-    border-bottom: 2px solid var(--color-accent);
 }
 
-.hero {
-    background: url('../img/sushi-bg.jpg') center/cover no-repeat;
-    color: white;
-    text-align: center;
-    padding: 5rem 2rem;
-}
-
-.hero-content h1 {
-    font-size: 3rem;
-    letter-spacing: 3px;
-}
-
-.tagline {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-}
-
-.btn-primary {
+/* Botones */
+button {
     background-color: var(--color-primary);
     color: white;
-    padding: 0.75rem 1.5rem;
+    border: none;
+    padding: 0.7rem 1.2rem;
     border-radius: 5px;
+    font-family: var(--font-main);
+    cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-.btn-primary:hover {
+button:hover {
     background-color: var(--color-secondary);
 }
 
-.section {
+/* Secciones */
+section {
     padding: 3rem 2rem;
-}
-
-.bg-light {
     background-color: var(--color-bg-light);
-}
-
-.contenido-historia {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    align-items: center;
-}
-
-.texto-historia {
-    flex: 1;
-}
-
-.imagen-historia img {
-    width: 100%;
-    max-width: 400px;
-    border-radius: 8px;
-}
-
-/* Principios */
-.principios-lista {
-    list-style: none;
-    padding-left: 0;
-}
-
-.principio-destacado {
-    font-weight: bold;
-    color: var(--color-primary);
-}
-
-/* Tabla */
-.tabla-container {
-    overflow-x: auto;
-}
-
-.tabla-sushi {
-    width: 100%;
-    border-collapse: collapse;
-    text-align: left;
-    margin-top: 1rem;
-}
-
-.tabla-sushi th,
-.tabla-sushi td {
-    border: 1px solid #ddd;
-    padding: 0.75rem;
-}
-
-.tabla-sushi th {
-    background-color: var(--color-secondary);
-    color: white;
-}
-
-/* Galería */
-.galeria {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: space-around;
-}
-
-.imagen-galeria {
-    flex: 1 1 30%;
-    text-align: center;
-}
-
-.imagen-galeria img {
-    width: 100%;
-    border-radius: 8px;
-    max-width: 300px;
-}
-
-/* Video */
-.video-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 2rem;
-}
-
-.video-container iframe {
-    width: 100%;
-    max-width: 560px;
-    height: 315px;
 }
 
 /* Footer */
 footer {
+    text-align: center;
+    padding: 1rem;
     background-color: var(--color-bg-dark);
     color: var(--color-text-light);
-    padding: 2rem;
-    text-align: center;
 }
 
-.footer-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 2rem;
-}
-
-.footer-img {
-    max-width: 100px;
-}
-
-.social-icons {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-}
-
-.social-icon {
-    background-color: var(--color-primary);
-    color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.social-icon:hover {
-    background-color: var(--color-accent);
-}
-
-.copyright {
-    margin-top: 2rem;
-    font-size: 0.9rem;
-}
-
-/* Responsive */
+/* Responsive Design */
 @media (max-width: 768px) {
-    .contenido-historia {
-        flex-direction: column;
-    }
-
-    .galeria {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footer-content {
-        flex-direction: column;
-        align-items: center;
-    }
-
     header {
         flex-direction: column;
         align-items: flex-start;
     }
 
-    .menu {
+    nav ul {
         flex-direction: column;
         gap: 0.5rem;
         margin-top: 1rem;
     }
 
-    .hero-content h1 {
-        font-size: 2.2rem;
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    section {
+        padding: 2rem 1rem;
     }
 }
